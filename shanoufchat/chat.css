@@ -8,7 +8,7 @@
     align-items: center;
     background-color: #4444a1;
     color: white;
-    width: 1349px;
+    width: 100%;
 }
 .heading img{
     width: 100px;
@@ -19,7 +19,7 @@
     font-weight: bold;
 }
 #content{
-    width: 1349px;
+    width: 100%;
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -88,7 +88,7 @@
     clear: both;
 }
 #footer{
-    width: 1349px;
+    width: 100%;
     height: 30px;
     display: flex;
     justify-content: center;
@@ -106,4 +106,70 @@
 .right{
     float: right;
     clear: both;
+}
+@media screen and (min-width:850px) and (max-width:1350px){
+    #container{
+        width: 500px;
+        height: 350px;
+    }
+    #input{
+        width: 411px;
+    }
+}
+@media screen and (min-width:630px) and (max-width:849px){
+    #container{
+        width: 500px;
+        height: 350px;
+    }
+    #input{
+        width: 411px;
+    }
+    .heading{
+        flex-direction: column;
+    }
+    .heading div{
+        text-align: center;
+    }
+}
+@media screen and (min-width:450px) and (max-width:629px){
+    .heading{
+        flex-direction: column;
+    }
+    .heading div{
+        text-align: center;
+    }
+    #container{
+        width: 400px;
+        height: 400px;
+    } 
+    #input{
+        width: 308px;
+    } 
+    #container div{
+        width: 200px;
+    }
+}
+@media screen and (max-width:449px){
+    .heading{
+        flex-direction: column;
+    }
+    .heading div{
+        text-align: center;
+    }
+    #container{
+        width: 255px;
+        height: 325px;
+    } 
+    #input{
+        width: 164px;
+    } 
+    #footer{
+        height: 45px;
+    }
+    #footer div{
+        text-align: center;
+    }
+    #container div{
+        width: 150px;
+    }
 }
